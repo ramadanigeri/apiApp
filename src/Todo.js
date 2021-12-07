@@ -14,7 +14,7 @@ const Todo = () => {
         const responseTodo = res.data;
         setTodoDetails(responseTodo);
       });
-  }, []);
+  }, [id]);
 
   const { id: todoId, userId, title, completed } = todoDetails || {};
   return (
